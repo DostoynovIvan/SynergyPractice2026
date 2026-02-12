@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1_DateConverter", "Task1_DateConverter", "{2D45A268-1EB8-4BF2-B738-013445C0C5F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2_Counter", "Task2_Counter", "{20520B7C-8234-4F92-B604-7FC84F8E2CE8}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		script.js = script.js
+		style.css = style.css
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3_DjangoGreetings", "Task3_DjangoGreetings", "{890CA406-189E-4C8B-B81F-B0BC84491D0F}"
 EndProject
