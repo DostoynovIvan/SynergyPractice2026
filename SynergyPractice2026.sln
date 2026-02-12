@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1_DateConverter", "Task1_DateConverter", "{2D45A268-1EB8-4BF2-B738-013445C0C5F1}"
 EndProject
@@ -18,7 +18,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Task1_DateConverter", "Task1_DateConverter\Task1_DateConverter.pyproj", "{8D4B4D78-1BC3-4FEC-9B34-F75331241247}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D4B4D78-1BC3-4FEC-9B34-F75331241247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4B4D78-1BC3-4FEC-9B34-F75331241247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -28,5 +38,6 @@ Global
 		{890CA406-189E-4C8B-B81F-B0BC84491D0F} = {F5144A01-E6FA-4072-B255-BE1CCAA0E338}
 		{92A9151D-7B64-4EBE-83FF-79C8F5BFE1CF} = {F5144A01-E6FA-4072-B255-BE1CCAA0E338}
 		{5E04C2AB-D2F3-4275-A9B3-4E0A3951C54C} = {F5144A01-E6FA-4072-B255-BE1CCAA0E338}
+		{8D4B4D78-1BC3-4FEC-9B34-F75331241247} = {2D45A268-1EB8-4BF2-B738-013445C0C5F1}
 	EndGlobalSection
 EndGlobal
