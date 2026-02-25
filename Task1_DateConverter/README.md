@@ -1,0 +1,88 @@
+﻿# Python Age Calculator 📅
+
+Программа рассчитывает свой возраст, определяет день недели по дате рождения и выводит дату в звёздочках.
+
+## Функционал
+
+### 1. Запрос данных у пользователя
+- **get_birth_date()**: Запрашивает у пользователя дату рождения в формате "день месяц год" и возвращает объект `date`.
+- **get_weekday(date_obj)**: Возвращает название дня недели для переданной даты.
+- **is_leap_year(year)**: Проверяет, является ли год високосным.
+- **calculate_age(birth_date)**: Возвращает количество полных лет на текущую дату.
+- **years_word(age)**: Возвращает правильное склонение слова "год" для заданного возраста.
+- **print_date_in_7seg(date_str)**: Выводит дату в специальном 7-сегментном формате с использованием звёздочек.
+
+### Пример использования
+
+```python
+#!/usr/bin/env python3
+from datetime import date
+
+def get_birth_date():
+    """Запрашивает день, месяц, год и возвращает объект date."""
+    print("Введите дату вашего рождения:")
+    day = int(input("День (1-31): "))
+    month = int(input("Месяц (1-12): "))
+    year = int(input("Год (например 2000): "))
+    return datetime.date(year, month, day)
+
+def get_weekday(date_obj):
+    days_gen = ["ponedельник", "dva nedelja", "streda", " четвёртак", "pятница", "subбота", "vоскресенье"]
+    idx = date_obj.weekday()
+    return days_gen[idx]
+
+def is_leap_year(year):
+    """Возвращает True, если год високосный, иначе False."""
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+def calculate_age(birth_date):
+    today = datetime.date.today()
+    age = today.year - birth_date.year
+    if (today.month, today.day) < (birth_date.month, birth_date.day):
+        age -= 1
+    return age
+
+def years_word(age):
+    age_last_two = age % 100
+    age_last_one = age % 10
+
+    if 11 <= age_last_two <= 19:
+        return "лет"
+    elif age_last_one == 1:
+        return "год"
+    elif 2 <= age_last_one <= 4:
+        return "года"
+    else:
+        return "лет"
+
+def print_date_in_7seg(date_str):
+    lines = [""] * 5
+    for ch in date_str:
+        pattern = DIGITS.get(ch, "")
+        for i in range(5):
+            lines[i] += pattern[i] + "  "
+    for line in lines:
+        print(line)
+
+# Основная программа
+def main():
+    birth_date = get_birth_date()
+    
+    weekday = get_weekday(birth_date)
+    print(f"\nВы родились в {weekday}.")
+
+    leap = is_leap_year(birth_date.year)
+    if leap:
+        print(f"Год {birth_date.year} был високосным.")
+    else:
+        print(f"Год {birth_date.year} не был високосным.")
+
+    age = calculate_age(birth_date)
+    print(f"Вам {age} полных лет.")
+
+    date_display = birth_date.strftime("%d %m %Y")
+    print("\nВаша дата рождения в стиле электронного табло:\n")
+    print_date_in_7seg(date_display)
+
+if __name__ == "__main__":
+    main()
