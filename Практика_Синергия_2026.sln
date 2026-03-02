@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task5_AnalyticalReview", "Task5_AnalyticalReview", "{A1ADC03A-002F-47C4-B62E-92E9E0D4BA00}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{031D075C-5CCA-4F6A-849D-432B518F17C5}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -18,6 +16,8 @@ EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Task3_DjangoGreetings", "Task3_DjangoGreetings\Task3_DjangoGreetings.pyproj", "{B2136FD3-E060-4E71-8DF5-676B4BC89B87}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Task4_Calculator", "Task4_Calculator\Task4_Calculator.pyproj", "{BC34F70C-7EC7-40B8-9E39-3170219B753F}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Task5_AnalyticalReview", "Task5_AnalyticalReview\Task5_AnalyticalReview.pyproj", "{B6616848-E768-4CC9-AAE2-6340A25BD5B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +39,10 @@ Global
 		{BC34F70C-7EC7-40B8-9E39-3170219B753F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC34F70C-7EC7-40B8-9E39-3170219B753F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC34F70C-7EC7-40B8-9E39-3170219B753F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6616848-E768-4CC9-AAE2-6340A25BD5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6616848-E768-4CC9-AAE2-6340A25BD5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6616848-E768-4CC9-AAE2-6340A25BD5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6616848-E768-4CC9-AAE2-6340A25BD5B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
