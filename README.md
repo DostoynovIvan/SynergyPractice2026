@@ -21,10 +21,10 @@
 ## Запуск проектов
 
 - Для задач 1, 2, 4 достаточно открыть соответствующий HTML-файл в браузере или запустить Python-скрипт.
-- Для задачи 3 (Django) см. инструкцию в папке `Task3_DjangoGreetings/README.md` (если есть) или выполните стандартные команды Django.
+- Для задачи 3 (Django) см. инструкцию в папке `Task3_DjangoGreetings/README.md` и выполните стандартные команды Django.
 
 ## Ссылка на репозиторий
-[https://github.com/DostoynovIvan/SynergyPractice2026](https://github.com/DostoynovIvan/SynergyPractice2026)
+[SynergyPractice2026](https://github.com/DostoynovIvan/SynergyPractice2026)
 
 ## Автор
 **Достойнов Иван Валерьевич**  
