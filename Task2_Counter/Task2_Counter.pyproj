@@ -28,6 +28,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="README.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="script.js" />
     <Content Include="style.css" />
   </ItemGroup>
