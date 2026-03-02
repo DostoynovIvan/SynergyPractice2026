@@ -45,7 +45,7 @@
 ---
 
 ## 🖼 Внешний вид (опционально)
-![]calc.png
+![](https://github.com/DostoynovIvan/SynergyPractice2026/tree/master/Task4_Calculator/calc.png)
 
 Пример интерфейса:
 - Два поля ввода, расположенные горизонтально.
