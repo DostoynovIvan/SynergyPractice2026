@@ -26,6 +26,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="calc.png" />
     <Content Include="index.html">
       <SubType>Code</SubType>
     </Content>
